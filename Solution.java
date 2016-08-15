@@ -1,11 +1,7 @@
 
 public class Solution {
-<<<<<<< HEAD
-	public static final int single = 10;
+
 	//------------冒泡排序算法---------------------------------
-=======
-	//冒泡排序算法
->>>>>>> origin/master
 	public void bubbleSort(int[] testCase){
 		if(testCase==null) return;
 		int N = testCase.length;
@@ -20,12 +16,8 @@ public class Solution {
 		}
 		
 	}
-	
-<<<<<<< HEAD
+
 	//------------插入排序---------------------------------
-=======
-	//插入排序
->>>>>>> origin/master
 	public void insertSort(int[] testCase){
 		if(testCase==null) return;
 		int N = testCase.length;
@@ -42,11 +34,8 @@ public class Solution {
 			testCase[j+1] = temp;	
 		}
 	}
-<<<<<<< HEAD
+
 	//------------选择排序---------------------------------
-=======
-	//选择排序
->>>>>>> origin/master
 	public void selectSort(int[] testCase){
 		if(testCase==null) return;
 		int N = testCase.length;
@@ -64,11 +53,7 @@ public class Solution {
 		}
 	}
 	
-<<<<<<< HEAD
 	//------------快速排序---------------------------------
-=======
-	//快速排序
->>>>>>> origin/master
 	public void quickSort(int[] testCase){
 		if(testCase==null) return;
 		int N = testCase.length;
@@ -112,11 +97,9 @@ public class Solution {
 		testCase[l] = temp;
 		return l;
 	}
-<<<<<<< HEAD
+
 	//------------选择随机主元
-=======
-	//以随机一个元素作为主元
->>>>>>> origin/master
+
 	public int partition2(int[] testCase,int start,int end){
 		//获取随机index
 		int randIndex = (int)Math.random()*(end-start+1) + start;
@@ -124,11 +107,9 @@ public class Solution {
 		swap(testCase,start,randIndex);
 		return  partition(testCase,start,end);
 	}
-<<<<<<< HEAD
+
 	//------------选择最后一个元素作为主元
-=======
-	//选择最后一个元素作为主元
->>>>>>> origin/master
+
 	public int partition3(int[] testCase,int start,int end){
 		int l = start-1,r = start;
 		int value = testCase[end];
